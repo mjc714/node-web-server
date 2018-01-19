@@ -8,14 +8,9 @@
 <title>About Page</title>
 
 <body>
-    <h1>{{pageTitle}}</h1>
+    {{> header}}
     <p>Lorem ipsum pepsum.</p>
 </body>
-
-<footer>
-    <p>
-        Copyright {{currentYear}}
-    </p>
-</footer>
+{{!-- Inject footer partial. --}} {{> footer}}
 
 </html>

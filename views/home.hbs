@@ -8,14 +8,10 @@
 <title>{{title}}</title>
 
 <body>
-    <h1>{{pageTitle}}</h1>
-    <p>{{welcomeMessage}}</p>
+    {{> header}}
+    {{!-- equivalent loundFunc(welcomeMessage) --}}
+    <p>{{loudFunc welcomeMessage}}</p>
 </body>
-
-<footer>
-    <p>
-        Copyright {{currentYear}}
-    </p>
-</footer>
+{{!-- Inject footer partial. --}} {{> footer}}
 
 </html>

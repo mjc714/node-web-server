@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+const port = process.env.PORT || 3000;
 let app = express();
 
 // Add support for partials.
@@ -50,6 +51,6 @@ app.get('/about', (req, res) => {
         pageTitle: 'About Page'
     });
 });
-app.listen(3000, () => {
-    console.log('Server running on port 3000.');
+app.listen(port, () => {
+    console.log(`Server running on port: ${port}.`);
 });
